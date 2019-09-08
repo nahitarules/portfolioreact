@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Portfolio React
+
+This project is my personal portfolio web app,
+built using react.It contains my resume, my projects and 
+about me tabs.
+
 ## Available Scripts
 
 In the project directory, you can run:
