@@ -27,6 +27,32 @@ export default class Products extends Component {
                                     <IconButton name="share" />
                                 </CardMenu>
                             </Card>
+
+                            <Card className="card"> 
+                                <CardTitle className="card-title react" style={{color: 'white'}}>Resort App With Rooms</CardTitle>
+                                <CardText>
+                                    Hotel Resort Web App that lets Users Filter rooms.
+                                </CardText>
+                                <CardActions border>
+                                    <Button colored ><a href="https://github.com/nahitarules/resort" target="_blank">Github</a></Button>
+                                </CardActions>
+                                <CardMenu className="card-menu">
+                                    <IconButton name="share" />
+                                </CardMenu>
+                            </Card>
+
+                            <Card className="card"> 
+                                <CardTitle className="card-title react" style={{color: 'white'}}>React Smart Phone Store</CardTitle>
+                                <CardText>
+                                    E-commerce website for smart phones
+                                </CardText>
+                                <CardActions border>
+                                    <Button colored ><a href="https://github.com/nahitarules/react-phone-store" target="_blank">Github</a></Button>
+                                </CardActions>
+                                <CardMenu className="card-menu">
+                                    <IconButton name="share" />
+                                </CardMenu>
+                            </Card>
                         
                     </div>
                 )
@@ -69,32 +95,6 @@ export default class Products extends Component {
 
                         {/* Project 2 */}
                         <Card className="card"> 
-                            <CardTitle className="card-title ruby">Open to do</CardTitle>
-                            <CardText>
-                            Open to do is an externally usable API for a basic to-do list application
-                            </CardText>
-                            <CardActions border>
-                            <Button colored ><a href="https://github.com/nahitarules/open-to-do" target="_blank">Github</a></Button>
-                            </CardActions>
-                            <CardMenu className="card-menu" >
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-
-                         <Card className="card"> 
-                            <CardTitle className="card-title ruby">Open to do</CardTitle>
-                            <CardText>
-                            Open to do is an externally usable API for a basic to-do list application
-                            </CardText>
-                            <CardActions border>
-                            <Button colored ><a href="https://github.com/nahitarules/open-to-do" target="_blank">Github</a></Button>
-                            </CardActions>
-                            <CardMenu className="card-menu" >
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-
-                         <Card className="card"> 
                             <CardTitle className="card-title ruby">Open to do</CardTitle>
                             <CardText>
                             Open to do is an externally usable API for a basic to-do list application
