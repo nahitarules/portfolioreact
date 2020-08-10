@@ -39,15 +39,15 @@ export default class About extends Component {
                     </div>
 
                     <div className="social-list">
-                        <a className="social-link" href="http://google.com" rel="noopener noreferrer" target="_blank">  
+                        <a className="social-link" href="https://www.facebook.com/NahiiSD/" rel="noopener noreferrer" target="_blank">  
                             <i className="fab fa-facebook" aria-hidden="true" />
                         </a>
 
-                        <a className="social-link" href="http://google.com" rel="noopener noreferrer" target="_blank">
+                        <a className="social-link" href="https://www.instagram.com/nahitaa/" rel="noopener noreferrer" target="_blank">
                             <i class="fab fa-instagram" />
                         </a>
 
-                        <a className="social-link" href="http://google.com" rel="noopener noreferrer" target="_blank">
+                        <a className="social-link" href="https://twitter.com/NahomeGudeta" rel="noopener noreferrer" target="_blank">
                             <i className="fab fa-twitter" />
                         </a>
                     </div>

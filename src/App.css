@@ -197,7 +197,7 @@ header {
   .footer-text {
     font-weight: 700;
     font-size: 1.5em;
-    margin: 1.5em 10em;
+    margin: 1.5em 2em;
     color: rgb(227, 155, 150);
   }
 
@@ -221,13 +221,10 @@ header {
     margin:0 0 2em 8em;
   }
 
-  .contact {
-    margin-right: 5em;
-  }
-
   .contact-text {
     margin-right: 8em;
-      font-size: 1.5rem
+    margin-left: 1em;
+    font-size: 1.5rem
   }
 }
 
