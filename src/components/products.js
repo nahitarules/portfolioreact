@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Contacts from './contacts'
 import { Tabs, Tab, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Grid, Cell } from "react-mdl";
 
 export default class Products extends Component {
@@ -12,42 +13,36 @@ export default class Products extends Component {
         toggleCategories() {
             if(this.state.activeTab === 0) {
                 return (
-                    
-                    <div className="projects-grid">
-
-                        
+                    <div className="projects-grid">  
                         {/* Project 1 */}
-                            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}> 
-                                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/16097/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png) center / cover' }}>Bloc Jams React Project</CardTitle>
+                            <Card className="card"> 
+                                <CardTitle className="card-title react" style={{color: 'white'}}>Bloc Jams React Project</CardTitle>
                                 <CardText>
                                     Spotify like web app Built in React
                                 </CardText>
                                 <CardActions border>
                                     <Button colored ><a href="https://github.com/nahitarules/bloc-jams-react" target="_blank">Github</a></Button>
                                 </CardActions>
-                                <CardMenu style={{color: '#fff'}}>
+                                <CardMenu className="card-menu">
                                     <IconButton name="share" />
                                 </CardMenu>
                             </Card>
                         
                     </div>
-
-
-                    
                 )
             } else if(this.state.activeTab === 1) {
                 return (
                     <div className="projects-grid">
                     {/* Project 1 */}
-                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}> 
-                            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn.auth0.com/blog/illustrations/angular.png) center / cover' }}>Bloc Jams Angular</CardTitle>
+                        <Card className="card" > 
+                            <CardTitle className="card-title angular">Bloc Jams Angular</CardTitle>
                             <CardText>
                                 Spotify like web app Built in Angular
                             </CardText>
                             <CardActions border>
                             <Button colored ><a href="https://github.com/nahitarules/my-bloc-jams-angularjs" target="_blank">Github</a></Button>
                             </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
+                            <CardMenu className="card-menu">
                                 <IconButton name="share" />
                             </CardMenu>
                         </Card>
@@ -59,34 +54,58 @@ export default class Products extends Component {
                 return (
                     <div className="projects-grid">
                     {/* Project 1 */}
-                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}> 
-                            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2015/01/Blog_About-Ruby2.jpg) center / cover' }}>Blocipedia</CardTitle>
+                        <Card className="card" > 
+                            <CardTitle className="card-title ruby">Blocipedia</CardTitle>
                             <CardText>
                              Web app that allows users to create wikis built in Ruby on Rails
                             </CardText>
                             <CardActions border>
                             <Button colored ><a href="https://github.com/nahitarules/blocipedia" target="_blank">Github</a></Button>
                             </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
+                            <CardMenu className="card-menu">
                                 <IconButton name="share" />
                             </CardMenu>
                         </Card>
 
                         {/* Project 2 */}
-                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}> 
-                            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2015/01/Blog_About-Ruby2.jpg) center / cover' }}>Open to do</CardTitle>
+                        <Card className="card"> 
+                            <CardTitle className="card-title ruby">Open to do</CardTitle>
                             <CardText>
                             Open to do is an externally usable API for a basic to-do list application
                             </CardText>
                             <CardActions border>
                             <Button colored ><a href="https://github.com/nahitarules/open-to-do" target="_blank">Github</a></Button>
                             </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
+                            <CardMenu className="card-menu" >
                                 <IconButton name="share" />
                             </CardMenu>
                         </Card>
 
-                        
+                         <Card className="card"> 
+                            <CardTitle className="card-title ruby">Open to do</CardTitle>
+                            <CardText>
+                            Open to do is an externally usable API for a basic to-do list application
+                            </CardText>
+                            <CardActions border>
+                            <Button colored ><a href="https://github.com/nahitarules/open-to-do" target="_blank">Github</a></Button>
+                            </CardActions>
+                            <CardMenu className="card-menu" >
+                                <IconButton name="share" />
+                            </CardMenu>
+                        </Card>
+
+                         <Card className="card"> 
+                            <CardTitle className="card-title ruby">Open to do</CardTitle>
+                            <CardText>
+                            Open to do is an externally usable API for a basic to-do list application
+                            </CardText>
+                            <CardActions border>
+                            <Button colored ><a href="https://github.com/nahitarules/open-to-do" target="_blank">Github</a></Button>
+                            </CardActions>
+                            <CardMenu className="card-menu" >
+                                <IconButton name="share" />
+                            </CardMenu>
+                        </Card>
                     </div>
                 )
             }
@@ -95,8 +114,10 @@ export default class Products extends Component {
     
     render() {
         return (
-            <div className="category-tabs">
-                <Tabs activeTab={ this.stateactiveTab } onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <div className="category-tabs">
+        <div className="projects-contact">
+            <div>
+            <Tabs activeTab={ this.stateactiveTab } onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab>React</Tab>
                     <Tab>Angular</Tab>
                     <Tab>Ruby On Rails</Tab>
@@ -106,8 +127,35 @@ export default class Products extends Component {
                         <div className="content">{this.toggleCategories()}</div>
                     </Cell>
                 </Grid>
-                    
+                <div>
+                    <Contacts />
+                </div>  
             </div>
+            
+        </div>
+            <div className="footer">
+                <div className="footer-container">
+                    <div class="footer-main">
+                        <p class="footer-text">Get in touch on social media</p>
+                    </div>
+
+                    <div className="social-list">
+                        <a className="social-link" href="http://google.com" rel="noopener noreferrer" target="_blank">  
+                            <i className="fab fa-facebook" aria-hidden="true" />
+                        </a>
+
+                        <a className="social-link" href="http://google.com" rel="noopener noreferrer" target="_blank">
+                            <i class="fab fa-instagram" />
+                        </a>
+
+                        <a className="social-link" href="http://google.com" rel="noopener noreferrer" target="_blank">
+                            <i className="fab fa-twitter" />
+                        </a>
+                    </div>
+                  </div>  
+                        <p class="footer-fineprint" style={{marginBottom: 0}}>© Nahome Gudeta 2020</p>
+                </div>
+        </div>
         )
     }
 }
