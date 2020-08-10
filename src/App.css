@@ -250,7 +250,7 @@ header {
   color: grey;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 900px) {
   .about-container {
     display: flex;
     flex-direction: row-reverse;
@@ -263,10 +263,11 @@ header {
   .main-text {
     justify-content: space-between;
     margin: 1em 5em;
+    margin-bottom: 0;
   }
 
   .text {
-    margin: 2.5em 20em;
+    margin: 2.5em 15em;
     margin-top: 1em;
   } 
 
@@ -275,7 +276,7 @@ header {
   }
 
   .section-title {
-    margin-top: -100px;
+    margin-top: -50px;
     margin-bottom: 0; 
   }
 
